@@ -19,7 +19,7 @@ while ($data = mysqli_fetch_assoc($query)) {
     <link rel="stylesheet" href="style/main.css">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
     <title>Hello, world!</title>
 </head>
 
@@ -74,9 +74,15 @@ while ($data = mysqli_fetch_assoc($query)) {
                                     <td><?= $u["nama"] ?></td>
                                     <td><?= $u["company"] ?></td>
                                     <td>
-                                        <button class="btn-style detail">detail</button>
-                                        <button class="btn-style hapus">hapus</button>
-                                        <button class="btn-style update">update</button>
+                                        <button class="btn-style detail">
+                                            <i class="far fa-id-card"></i>
+                                        </button>
+                                        <button class="btn-style hapus">
+                                            <i class="fas fa-user-minus"></i>
+                                        </button>
+                                        <button class="btn-style update">
+                                            <i class="fas fa-user-edit"></i>
+                                        </button>
                                     </td>
                                 </tr>
 
